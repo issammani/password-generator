@@ -1,0 +1,28 @@
+{
+    "name": "Password Generator",
+    "version": "0.1",
+    "description": "A random password generator",
+    "permissions": [],
+    "background":{
+      "page": "src/html/background.html",
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "src/html/popup.html",
+      "default_icon": {
+        "16": "assets/pass-gen16.png",
+        "32": "assets/pass-gen32.png",
+        "48": "assets/pass-gen48.png",
+        "128": "assets/pass-gen128.png"
+      }
+    },
+    "icons": {
+      "16": "assets/pass-gen16.png",
+      "32": "assets/pass-gen32.png",
+      "48": "assets/pass-gen48.png",
+      "128": "assets/pass-gen128.png"
+    },
+    "web_accessible_resources": [],
+    "manifest_version": 2
+  }
+  
