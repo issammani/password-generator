@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link href="../css/popup.css" rel="stylesheet" media="screen" />
-    <script type="module" src="../js/popup.js"></script>
+    <script defer type="module" src="../js/popup.js"></script>
 </head>
 <body>
-    <h1> Hy </h1>
+    <div class="wrapper">
+        <div class="password__input">
+            <input type="text" placeholder="Password will appear here..." id="password" />
+            <div class="password__controls">
+                <img src="../../assets/content_copy.svg" alt="Copy to clipboard" id="copyToClipboard"/>
+                <img src="../../assets/refresh.svg" alt="Refresh" id="regeneratePassword"/>
+            </div>
+        </div>
+
+
+        <div class="password__settings">
+            <p>Password length</p>
+            <div class="password__length_container">
+                <input type="range" min="5" max="50" value="10" id="password__length__range" />
+                <input type="number"  min="5" max="50" value="10" id="password__length__number"/>
+            </div>
+            <p>Password charsets</p>
+        </div>
+    </div>
 </body>
 </html>
