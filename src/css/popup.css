@@ -1,17 +1,3 @@
-/* @font-face {
-    font-family: 'PoppinsR';
-    src: url('../../fonts/Poppins-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'PoppinsB';
-    src: url('../../fonts/Poppins-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 *{
     margin: 0;
     padding: 0;
@@ -42,8 +28,33 @@ html, body {
     background: #101820;
     width: 100%;
     color: #fbfdff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-weight: 700;
+    font-size: 20px;
+}
+
+.password__input input::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #fbfdff;
+    font-size: 20px;
+}
+
+.password__input input::-moz-placeholder {
+    font-weight: 700;
+    color: #fbfdff;
+    font-size: 20px;
+}
+
+.password__input input:-ms-input-placeholder {
+    font-weight: 700;
+    color: #fbfdff;
+    font-size: 20px;
+}
+
+.password__input input::-ms-input-placeholder {
+    font-weight: 700;
+    color: #fbfdff;
     font-size: 20px;
 }
 
@@ -56,7 +67,9 @@ html, body {
 .password__controls{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     color: #FEE715;
     position: absolute;
     top: 50%;
@@ -68,7 +81,8 @@ html, body {
 .password__controls img{
     margin-right: 10px;
     width: 30px;
-    filter: invert(91%) sepia(74%) saturate(2370%) hue-rotate(340deg) brightness(101%) contrast(99%);
+    -webkit-filter: invert(91%) sepia(74%) saturate(2370%) hue-rotate(340deg) brightness(101%) contrast(99%);
+            filter: invert(91%) sepia(74%) saturate(2370%) hue-rotate(340deg) brightness(101%) contrast(99%);
     cursor: pointer;
 }
 
@@ -89,7 +103,10 @@ html, body {
     padding-left: 35px;
     margin-bottom: 10px;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .checkbox__container .checkbox{
@@ -114,10 +131,13 @@ html, body {
     height: 15px;
     width: 15px;
     border: 1px solid #FEE715;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 1px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
   
 
@@ -143,7 +163,8 @@ html, body {
     left: 2px;
     top: 5px;
     width: 9px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: absolute;
     height: 3px;
     background: #101820;
@@ -152,8 +173,12 @@ html, body {
 /** Style range input **/
 
 .password__length_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 15px;
 }
 
@@ -164,7 +189,8 @@ html, body {
     outline: 0;
     background: transparent;
     border: 1px solid yellow;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 5px;
     border-radius: 1px;
     color: white;
@@ -179,7 +205,8 @@ input[type=range] {
 input[type=range]:focus {
     outline: none;
 }
-input[type=range]::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track, 
+input[type=range]::-moz-range-track {
     background: #FEE715;
     border: 1.1px solid #e7d000;
     border-radius: 1px;
@@ -187,7 +214,10 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 11.3px;
     cursor: pointer;
 }
-input[type=range]::-webkit-slider-thumb {
+
+
+input[type=range]::-webkit-slider-thumb,
+input[type=range]::-moz-range-thumb{
     margin-top: -6.95px;
     width: 23px;
     height: 23px;
@@ -197,16 +227,14 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     -webkit-appearance: none;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
+
+input[type=range]::-moz-range-thumb{
+    width: 20px;
+    height: 20px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track,
+input[type=range]:focus::-moz-range-track {
     background: #e7d000;
 }
 
 
-
-
-
-
-
- 
- 
- 
