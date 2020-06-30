@@ -1,6 +1,6 @@
 {
     "name": "Password Generator",
-    "version": "0.1",
+    "version": "1.0.0",
     "description": "A random password generator",
     "permissions": [],
     "background":{
