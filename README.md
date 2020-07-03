@@ -6,7 +6,7 @@ A ~~chrome~~ browser extension for generating random passwords.
 
 # Install 
 
-- [Chrome Web Store]() ![status badge](https://img.shields.io/badge/status-pending--review-orange)
+- [Chrome Web Store](https://chrome.google.com/webstore/detail/aolabpnafdepgahhdebhhbcbdnkojmgp) ![status badge](https://img.shields.io/badge/status-published-brightgreen)
 - [Firefox Addon](https://addons.mozilla.org/addon/quickpass-password-generator/) ![status badge](https://img.shields.io/badge/status-published-brightgreen)
 
 - If you would like to play around with the code in your local machine, you can clone this repo and:
